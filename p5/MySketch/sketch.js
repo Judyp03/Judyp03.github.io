@@ -1,33 +1,31 @@
-let a = 0; 
-let b = 0; 
-let c = 0;
+let value1 = 172;
+let value2 = 227;
+let value3 = 233;
 
 function setup() {
-  createCanvas(800, 600);
-  stroke(400);
+  createCanvas(800, 800);
 }
 
 function draw() {
-  background('purple');
-
-  a = a + 3; 
-  b = b + 0.8; 
-  c = c + 5;
-  stroke("#251AE1");
+  background(230,165,151);
+  text("love", 45, 200);
+  textSize(200);
   strokeWeight(10);
-  fill("#CFE607");
-  ellipse(a, 5, a, height / 2);
-  ellipse(b, height / 3, b, height);
-  rect(c, 10, c, height / 1);
 
-  if (a > width) {
-    a = 0;
+  fill(value1,value2,value3);
+  ellipse(400,400,400,400);
+}
+
+function mouseClicked() {
+
+  if (value1 == 150) {
+    value1 = 181;
+    value2 = 232;
+    value3 = 172;
+  }else{
+    value1 = 150;
+    value2 = 26;
+    value3 = 128;
   }
-  if (b > width) {
-    b = 0;
-	}
-	if (c > width) {
-		c = 0;
-	}
- }
 
+}
